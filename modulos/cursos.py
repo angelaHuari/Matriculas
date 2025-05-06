@@ -7,3 +7,7 @@ def agregar_curso(nombre):
 
 def obtener_curso_por_id(curso_id):
     return next((c for c in cursos if c["id"] == curso_id), None)
+
+def obtener_cursos():
+    # Retorna una lista de nombres de cursos
+    return [c["nombre"] for c in cursos]

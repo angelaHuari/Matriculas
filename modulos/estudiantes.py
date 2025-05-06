@@ -7,3 +7,7 @@ def agregar_estudiante(nombre):
 
 def obtener_estudiante_por_id(estudiante_id):
     return next((e for e in estudiantes if e["id"] == estudiante_id), None)
+
+def obtener_estudiantes():
+    # Retorna una lista de nombres de estudiantes
+    return [e["nombre"] for e in estudiantes]
