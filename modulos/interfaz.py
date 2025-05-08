@@ -7,7 +7,7 @@ from .matriculas import matricular, obtener_matriculas
 def iniciar_gui():
     ventana = tk.Tk()
     ventana.title("Sistema de Matrículas")
-    ventana.geometry("600x500")
+    ventana.geometry("800x600")
 
     # Sección de estudiantes
     tk.Label(ventana, text="Nombre del estudiante").pack()
